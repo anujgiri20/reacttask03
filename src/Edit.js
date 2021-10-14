@@ -24,13 +24,14 @@ export function Edit({ username, userpic, id, setedit, getdata }) {
           value={name}
           onChange={(event) => setname(event.target.value)}
 
-          placeholder="Enter your name" />
+          placeholder="Folder name" />
 
         <input
           className="userinput1"
           value={pic}
           onChange={(event) => seturl(event.target.value)}
-          placeholder="Enter your pic url" />
+          placeholder="Enter image url" />
+          
         <button className="button3" onClick={edituserid}>
           Save Changes
         </button>

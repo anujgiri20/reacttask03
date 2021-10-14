@@ -37,25 +37,26 @@ export function Createuser({ getdata }) {
       }).then(() => getdata());
     setpic("");
     setname("");
-    useradded("New user added successfully , check in Dashboard");
+    useradded("New folder added successfully , check in Dashboard");
   };
 
   return (
     <>
-      <div className="inputdiv">
+      <div className="inputdivbox">
         <input
           className="input1"
           value={value_name}
           onChange={(event) => setname(event.target.value)}
-          placeholder="Enter your name" />
+          placeholder="Folder name" />
         <br />
         <input
           className="input2"
           value={value_pic}
           onChange={(event) => setpic(event.target.value)}
-          placeholder="Enter your pic url" />
+          placeholder="Enter image url" />
         <br />
-        <button className="button" onClick={adduser}>Add user</button>
+        
+        <button className="button" onClick={adduser}>Create folder</button>
         <h1 className="popup">{add}</h1>
       </div>
     </>
